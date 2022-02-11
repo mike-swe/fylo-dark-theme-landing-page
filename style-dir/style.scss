@@ -1,0 +1,144 @@
+@import "reset";
+@import "colors";
+@import "mobile";
+
+a > img
+{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+nav, ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;;
+    padding: 4rem 2rem;
+}
+
+nav > ul 
+{
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+nav > ul > li
+{
+    position: relative;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+li::after
+{
+    content: "";
+    border-top: .1em solid $Cyan;
+    position: absolute;
+    left: 0;
+    bottom: -.3em;
+    right: 100%;
+    transition: all 400ms linear;
+}
+
+li:hover::after
+{
+    right: 0;
+    border: 0.5px solid $Cyan;
+    border-radius: 10px;
+}
+
+.header-cta
+{
+    background: $ctaBtn;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 1rem 5rem;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+h1, h2, h3
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-section, .stay-productive-section, .testimonials
+{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.promise-card
+{
+    padding: 2rem;
+}
+
+.stay-productive-image > img 
+{
+    width: 500px;
+    object-fit: cover;
+}
+
+.productive-content
+{
+    text-align: left;
+}
+
+.testimonials
+{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+    text-align: center;
+
+    @media screen and (max-width: $Mobile) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.user-feedback
+{
+    background: $TestimonialDarkBlue;
+    color: #f2f2f2;
+    font-size: .8rem;
+    text-align: left;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.user-profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-2rem);
+    margin: 0 2rem;
+}
+
+.user-image > img
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details
+{
+    transform: translateY(-.3rem);
+}
