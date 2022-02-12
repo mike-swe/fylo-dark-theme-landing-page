@@ -55,11 +55,14 @@ button, input {
   outline: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
   body {
-    width: 850px;
+    width: 880px;
     margin: 0 auto !important;
     text-align: center !important;
+  }
+  p {
+    font-size: 1.2rem;
   }
   a > img {
     width: 60px;
@@ -114,11 +117,15 @@ button, input {
     margin: 3rem 0;
     line-height: 1.8;
   }
+  .user-details {
+    -webkit-transform: translateX(-3rem) !important;
+            transform: translateX(-3rem) !important;
+  }
   .reg-section {
     background: #1c2431;
     -webkit-transform: translateY(12rem);
             transform: translateY(12rem);
-    padding: 2rem 1rem;
+    padding: 7rem 1rem !important;
     margin: 1rem;
   }
   .reg-section > h1 {
@@ -132,13 +139,35 @@ button, input {
   }
   #email, #form-cta {
     border-radius: 35px;
-    padding: 1rem 5rem;
+    padding: 1rem 5rem !important;
+  }
+  #email {
+    width: 380px !important;
+    -webkit-transform: translateX(0.3rem) !important;
+            transform: translateX(0.3rem) !important;
+  }
+  #email::-webkit-input-placeholder {
+    -webkit-transform: translateX(3rem) !important;
+            transform: translateX(3rem) !important;
+  }
+  #email:-ms-input-placeholder {
+    transform: translateX(3rem) !important;
+  }
+  #email::-ms-input-placeholder {
+    transform: translateX(3rem) !important;
+  }
+  #email::placeholder {
+    -webkit-transform: translateX(3rem) !important;
+            transform: translateX(3rem) !important;
   }
   #form-cta {
     background: linear-gradient(250deg, #65e2d9, #339ecc);
     color: white;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 2rem;
+    width: 390px;
     margin-top: 1rem;
+    -webkit-transform: translateY(2rem) !important;
+            transform: translateY(2rem) !important;
   }
   footer {
     padding: 15rem 0;
@@ -174,19 +203,37 @@ button, input {
     -webkit-transform: translateX(-7.7rem) translateY(-1.2rem) !important;
             transform: translateX(-7.7rem) translateY(-1.2rem) !important;
   }
+  body > main > footer > div.foo-footer > div.location > i {
+    -webkit-transform: translateX(-7.7rem) translateY(-3.7rem);
+            transform: translateX(-7.7rem) translateY(-3.7rem);
+  }
   .phone, .email {
-    -webkit-transform: translateX(-4rem);
-            transform: translateX(-4rem);
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+  .phone {
+    -webkit-transform: translateX(-6.3rem) !important;
+            transform: translateX(-6.3rem) !important;
+    padding-bottom: 1rem;
   }
   .contact {
-    -webkit-transform: translateX(-6rem) !important;
-            transform: translateX(-6rem) !important;
+    -webkit-transform: translateX(-10rem) !important;
+            transform: translateX(-10rem) !important;
+    padding: 2rem 0;
   }
   .fa, .fas {
     margin-right: 1rem;
   }
   .bottom-nav > ul {
     display: block;
+  }
+  .bottom-nav, .contact {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+  }
+  #footer-nav-2 > ul {
+    -webkit-transform: translateX(-18rem) translateY(-5rem) !important;
+            transform: translateX(-18rem) translateY(-5rem) !important;
   }
 }
 
@@ -299,7 +346,7 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
   .testimonials {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -410,6 +457,8 @@ p {
 footer {
   background: #0b1523;
   padding-top: 6rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #footer-logo {

@@ -1,12 +1,17 @@
 @import "colors";
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
  
     body
     {
         width: $Mobile;
         margin: 0 auto !important;
         text-align: center !important;
+    }
+
+    p
+    {
+        font-size: 1.2rem;
     }
 
     a > img 
@@ -85,11 +90,16 @@
         line-height: 1.8;
     }
 
+    .user-details
+    {
+        transform: translateX(-3rem) !important;
+    }
+
     .reg-section
     {
         background: $DarkBlue;
         transform: translateY(12rem);
-        padding: 2rem 1rem;
+        padding: 7rem 1rem !important;
         margin: 1rem;
     }
 
@@ -109,15 +119,28 @@
     #email, #form-cta
     {
         border-radius: 35px;
-        padding: 1rem 5rem;
+        padding: 1rem 5rem !important;
+    }
+
+    #email
+    {
+        width: 380px !important;
+        transform: translateX(.30rem)!important;
+    }
+
+    #email::placeholder
+    {
+        transform: translateX(3rem)!important;
     }
 
     #form-cta
     {
         background: $ctaBtn;
         color: $White;
-        padding: 1.5rem 6rem;
+        padding: 1.5rem 2rem;
+        width: 390px;
         margin-top: 1rem;
+        transform: translateY(2rem) !important;
     }
 
     footer
@@ -152,14 +175,26 @@
         transform: translateX(-7.7rem) translateY(-1.2rem) !important;
     }
 
+    body > main > footer > div.foo-footer > div.location > i
+    {
+        transform: translateX(-7.7rem) translateY(-3.7rem);
+    }
+
     .phone, .email
     {
-        transform: translateX(-4rem);
+        transform: translateX(-6rem);
+    }
+
+    .phone 
+    {
+        transform: translateX(-6.3rem) !important;
+        padding-bottom: 1rem;
     }
 
     .contact
     {
-        transform: translateX(-6rem) !important;
+        transform: translateX(-10rem) !important;
+        padding: 2rem 0;
     }
 
     .fa, .fas
@@ -170,5 +205,15 @@
     .bottom-nav > ul
     {
         display: block;
+    }
+
+    .bottom-nav, .contact
+    {
+        transform: translateX(-18rem);
+    }
+
+    #footer-nav-2 > ul
+    {
+        transform: translateX(-18rem) translateY(-5rem) !important;
     }
 }
