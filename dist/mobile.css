@@ -1,11 +1,11 @@
 @media screen and (max-width: 850px) {
   body {
-    width: 580px;
+    width: 850px;
     margin: 0 auto !important;
     text-align: center !important;
   }
   a > img {
-    width: 40px;
+    width: 60px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -59,11 +59,77 @@
   }
   .reg-section {
     background: #1c2431;
-    padding: 2rem;
+    -webkit-transform: translateY(12rem);
+            transform: translateY(12rem);
+    padding: 2rem 1rem;
     margin: 1rem;
   }
   .reg-section > h1 {
-    font-size: .8rem;
+    font-size: 1.8rem;
+  }
+  .reg-section > p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2.3;
+    margin: 1rem 0;
+  }
+  #email, #form-cta {
+    border-radius: 35px;
+    padding: 1rem 5rem;
+  }
+  #form-cta {
+    background: linear-gradient(250deg, #65e2d9, #339ecc);
+    color: white;
+    padding: 1.5rem 6rem;
+    margin-top: 1rem;
+  }
+  footer {
+    padding: 15rem 0;
+  }
+  #footer-logo {
+    -webkit-transform: translateX(-14rem) translateY(3rem) !important;
+            transform: translateX(-14rem) translateY(3rem) !important;
+  }
+  .foo-footer {
+    -webkit-transform: translateY(7rem);
+            transform: translateY(7rem);
+    text-align: left;
+    padding: 1rem 3rem;
+  }
+  .location, .phone, .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .location > p {
+    font-size: 1.2rem !important;
+    -webkit-transform: translateX(-7.7rem) translateY(-1.2rem) !important;
+            transform: translateX(-7.7rem) translateY(-1.2rem) !important;
+  }
+  .phone, .email {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+  .contact {
+    -webkit-transform: translateX(-6rem) !important;
+            transform: translateX(-6rem) !important;
+  }
+  .fa, .fas {
+    margin-right: 1rem;
+  }
+  .bottom-nav > ul {
+    display: block;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -49,4 +49,9 @@ a {
   color: #65e2d9;
   cursor: pointer;
 }
+
+button, input {
+  border: none;
+  outline: none;
+}
 /*# sourceMappingURL=reset.css.map */

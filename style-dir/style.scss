@@ -79,7 +79,7 @@ p
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 850px) {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -119,6 +119,7 @@ p
     text-align: left;
     padding: 2rem 3rem;
     margin-bottom: 3rem;
+    border-radius: 6px;
 }
 
 .user-profile
@@ -141,4 +142,89 @@ p
 .user-details
 {
     transform: translateY(-.3rem);
+}
+
+.reg-section
+{
+    background: $DarkBlue;
+    padding:1rem 2rem;
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .5);
+    transform: translateY(4rem);
+}
+
+.reg-section > p
+{
+    font-size: .7rem;
+}
+
+#email, #form-cta
+{
+    background: $White;
+    padding: .65rem 7rem;
+    border-radius: 25px;
+}
+
+#email
+{
+    transform: translateX(-7rem);
+}
+
+#email::placeholder
+{
+    font-size: .8rem;
+    opacity: 80%;
+    transform: translateX(-5rem);
+}
+
+#form-cta
+{
+    background: $ctaBtn;
+    color: $White;
+    font-weight: 700;
+    padding: .65rem 2rem;
+    transform: translateX(12rem) translateY(-2.5rem);
+    cursor: pointer;
+}
+
+footer
+{
+    background: $FooterDarkBlue;
+    padding-top: 6rem;
+}
+
+#footer-logo
+{
+    transform: translateX(-30rem) translateY(3rem);
+}
+
+.foo-footer
+{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    padding: 0 2rem;
+
+    @media screen and (max-width: 850px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .location > p
+    {
+        font-size: .7rem;
+        transform: translateY(-2.3rem);
+    }
+    
+    .contact
+    {
+        transform: translateY(-1.5rem);
+    }
+
+    .bottom-nav > ul
+    {
+        display: block;
+    }
 }
