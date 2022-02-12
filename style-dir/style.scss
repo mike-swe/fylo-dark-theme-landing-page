@@ -215,6 +215,7 @@ footer
     .location > p
     {
         font-size: .7rem;
+        line-height: 2;
         transform: translateY(-2.3rem);
     }
     
@@ -223,8 +224,39 @@ footer
         transform: translateY(-1.5rem);
     }
 
+    .contact >.phone
+    {
+        transform: translateY(-1.5rem);
+    }
+
     .bottom-nav > ul
     {
         display: block;
+    }
+
+    .bottom-nav > ul li
+    {
+        margin: 1rem 0;
+    }
+
+    #footer-nav-2
+    {
+        transform: translateY(-1.2rem);
+    }
+
+    .location, .phone, .email
+    {
+        display: flex;
+       align-items: center;
+    }
+
+    i
+    {
+        margin-right: 1rem;
+    }
+
+    .location > i
+    {
+        transform: translateY(-3.5rem);
     }
 }

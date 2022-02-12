@@ -436,6 +436,7 @@ footer {
 
 .foo-footer .location > p {
   font-size: .7rem;
+  line-height: 2;
   -webkit-transform: translateY(-2.3rem);
           transform: translateY(-2.3rem);
 }
@@ -445,7 +446,39 @@ footer {
           transform: translateY(-1.5rem);
 }
 
+.foo-footer .contact > .phone {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
 .foo-footer .bottom-nav > ul {
   display: block;
+}
+
+.foo-footer .bottom-nav > ul li {
+  margin: 1rem 0;
+}
+
+.foo-footer #footer-nav-2 {
+  -webkit-transform: translateY(-1.2rem);
+          transform: translateY(-1.2rem);
+}
+
+.foo-footer .location, .foo-footer .phone, .foo-footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foo-footer i {
+  margin-right: 1rem;
+}
+
+.foo-footer .location > i {
+  -webkit-transform: translateY(-3.5rem);
+          transform: translateY(-3.5rem);
 }
 /*# sourceMappingURL=style.css.map */
